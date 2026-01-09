@@ -1,176 +1,226 @@
-# Next.js Starter Package
+# 🛒 Sellora
 
-A **clean, modern, SEO‑first Next.js starter** for 2026.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Next.js](https://img.shields.io/badge/Next.js-13-blue) ![MongoDB](https://img.shields.io/badge/MongoDB-5.0-brightgreen) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3-blue)
 
-This starter is designed to help you build **production‑ready full‑stack applications** quickly without over‑engineering.
+**Sellora** is a **modern, AI-powered B2C multivendor marketplace** built for 2026 and beyond.
 
-It is ideal for:
+It enables multiple sellers to list and sell products on a single platform, while buyers enjoy a fast, SEO-friendly, personalized shopping experience powered by AI.
 
-* SaaS products
-* Marketplaces
-* Dashboards
-* SEO‑focused websites
-* Solo founders & small teams
+Sellora is inspired by platforms like **Daraz, Amazon, and Flipkart**, but designed to be:
+
+* Lighter
+* Smarter
+* More flexible
+* Built with modern web architecture
 
 ---
 
-## ✨ Features
+## 🚀 Vision
 
-* ⚡ Next.js App Router
-* 🧠 Server Components by default
-* 🎯 SEO‑first architecture
-* 🎨 Tailwind CSS
-* 🗄 MongoDB (native driver)
-* ✅ Zod validation
-* 🔐 Backend-ready (auth, APIs, server actions)
-* 🧱 Clean, scalable folder structure
-* 🪶 Minimal dependencies
+To build a **global, scalable, AI-first ecommerce platform** that:
+
+* Helps sellers sell more
+* Helps buyers find the right products faster
+* Works efficiently even with a small engineering team
+
+---
+
+## ✨ Core Features
+
+### 🧑‍💻 Buyer
+
+* Browse products by category
+* Product search (AI-assisted later)
+* Product recommendations
+* Wishlist & cart
+* Secure checkout
+* Order tracking
+* Reviews & ratings
+
+### 🏪 Seller
+
+* Seller registration & onboarding
+* Product management (CRUD)
+* Inventory & stock control
+* Order management
+* Earnings dashboard
+* Reviews & performance insights
+
+### 🛠 Admin
+
+* Vendor approval
+* Category management
+* Commission control
+* Order monitoring
+* User & seller moderation
+* Platform analytics
+
+---
+
+## 🤖 AI-Powered Features (Planned)
+
+* 🔍 Smart product search
+* 🎯 Personalized recommendations
+* 📝 AI product description suggestions
+* 📈 Seller performance insights
+* 🚨 Fraud & spam detection
+* 🛍 Smart upsell & cross-sell
+
+(All AI features are designed using **free & open-source tools**.)
 
 ---
 
 ## 🧰 Tech Stack
 
-* **Framework:** Next.js (App Router)
-* **Language:** TypeScript
-* **Styling:** Tailwind CSS
-* **Database:** MongoDB
-* **Validation:** Zod
-* **Runtime:** Node.js (via Next.js)
+### Frontend
+
+* **Next.js (App Router)**
+* **JavaScript (JSX)**
+* **Tailwind CSS**
+* Server Components (SEO-friendly)
+
+### Backend
+
+* **Next.js backend (API routes + Server Actions)**
+* **MongoDB** (native driver)
+* **Zod** for validation
+
+### AI (Open-Source Only)
+
+* Sentence Transformers
+* Vector similarity search
+* Rule-based + ML hybrid logic
+* No paid APIs required
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
 src/
 ├─ app/
-│  ├─ (public)/           # SEO pages
+│  ├─ (public)/           # Home, category, product pages
 │  ├─ (auth)/             # Login / Register
-│  ├─ (dashboard)/        # Protected UI
-│  ├─ api/                # Backend routes
-│  ├─ sitemap.ts          # SEO sitemap
-│  ├─ robots.ts           # SEO robots
-│  ├─ layout.tsx          # Root layout
+│  ├─ (buyer)/            # Buyer dashboard
+│  ├─ (seller)/           # Seller dashboard
+│  ├─ (admin)/            # Admin panel
+│  ├─ api/                # Backend APIs
+│  ├─ layout.jsx
 │  └─ globals.css
 │
 ├─ components/
 │  ├─ ui/                 # Reusable UI components
-│  └─ layout/             # Header / Footer
+│  └─ layout/             # Header, footer
 │
 ├─ lib/
-│  ├─ mongodb.ts          # DB connection
-│  ├─ auth.ts             # Auth helpers
-│  ├─ schemas.ts          # Zod schemas
-│  
-
+│  ├─ mongodb.js          # DB connection
+│  ├─ auth.js             # Auth helpers
+│  ├─ schemas.js          # Zod schemas
+│  └─ utils.js
+│
+├─ actions/               # Server Actions
+└─ constants/             # Roles, enums
 ```
 
 ---
 
-## 📦 Dependencies
+## 🔍 SEO-First by Design
 
-### Required
+Sellora is built with SEO as a **core feature**, not an afterthought:
 
-```bash
-npm install mongodb zod
-```
+* Server-side rendering
+* Clean URLs
+* Metadata API
+* Dynamic sitemap support
+* Minimal client JavaScript
+* Fast page loads
 
-### Optional
+Perfect for:
 
-```bash
-npm install bcryptjs
-```
-
-### Not Included (by design)
-
-* Redux / Zustand
-* Mongoose
-* Express
-* GraphQL
-* UI component libraries
+* Organic traffic
+* Product discovery
+* Global reach
 
 ---
 
-## 🚀 Getting Started
+## 🔐 Security Basics
 
-### 1. Install dependencies
+* Server-only business logic
+* Input validation with Zod
+* Password hashing
+* Role-based access (buyer / seller / admin)
+* Secure environment variables
+
+---
+
+## 💰 Monetization Model
+
+Sellora supports:
+
+* Commission per order
+* Category-based commission rates
+* Seller subscription plans (future)
+* Sponsored product listings (future)
+
+Commission is calculated **per order**, not per product view.
+
+---
+
+## 🧠 Design Philosophy
+
+* Keep it simple
+* Server-first architecture
+* Avoid unnecessary dependencies
+* Scalable, but not over-engineered
+* Solo-founder friendly
+
+---
+
+## 🛣 Roadmap
+
+### Phase 1 (MVP)
+
+* Buyer & seller flows
+* Product listings
+* Cart & checkout
+* Orders
+* Admin controls
+
+### Phase 2
+
+* AI recommendations
+* Smart search
+* Seller analytics
+
+### Phase 3
+
+* Global payments
+* Logistics integrations
+* Advanced AI personalization
+
+---
+
+## 📦 Installation
 
 ```bash
 npm install
-```
-
-### 2. Environment variables
-
-Create a `.env.local` file:
-
-```env
-MONGODB_URI=mongodb://localhost:27017/app
-```
-
-### 3. Run the app
-
-```bash
 npm run dev
 ```
 
-Open:
+Environment variables:
 
+```env
+MONGODB_URI=mongodb://localhost:27017/sellora
 ```
-http://localhost:3000
-```
-
----
-
-## 🔐 Backend Philosophy
-
-* **Server Components** for data fetching
-* **Server Actions** for mutations
-* **Minimal API routes**
-* Validation with **Zod**
-* Business logic stays on the server
-
----
-
-## 🔍 SEO Philosophy
-
-* Server‑rendered pages
-* Metadata API
-* Clean URLs
-* Sitemap + robots included
-* Minimal client JavaScript
-
----
-
-## 🛡 Security Basics
-
-* Input validation
-* Environment variable protection
-* Server‑only logic
-* Ready for auth & roles
-
----
-
-## 🧠 Design Principles
-
-* Simple > Clever
-* Server‑first
-* SEO‑first
-* Minimal dependencies
-* Easy to extend
-
----
-
-## 🛣 Roadmap (Optional)
-
-* Authentication (email/password)
-* Role‑based access
-* Payments (Stripe)
-* File uploads
-* AI integration
-* Admin panel
 
 ---
 
 ## 📄 License
 
 MIT
+
+---
+
+## 👤 Author
+
+Built by a **solo founder** with the goal of creating a **global, AI-powered ecommerce platform** using only **free and open-source technologies**.
